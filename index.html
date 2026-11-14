@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Titre de l'onglet du navigateur et description (pour Google) -->
+  <title>Claire Missie Mamouna — Portfolio BTS SIO SISR</title>
+  <meta name="description" content="Portfolio présentant mon parcours, mes compétences, mes projets et ma veille technologique.">
+
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700;800&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+
+<body>
+  <a class="skip" href="#contenu">Aller au contenu</a>
+
+
+  <!-- =====================================================================
+       EN-TÊTE ET MENU — identique sur toutes les pages
+       (seul le lien de la page en cours a aria-current="page")
+       ===================================================================== -->
+  <header class="site-header">
+    <div class="wrap bar">
+
+      <a class="brand" href="index.html" aria-label="Accueil">
+        <span>Claire Missie</span>
+        <span>Mamouna</span>
+      </a>
+
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+
+      <nav class="nav" id="site-nav" aria-label="Navigation principale">
+        <a href="index.html" aria-current="page">Accueil</a>
+        <a href="parcours.html">Parcours</a>
+        <a href="entreprises.html">Entreprises</a>
+        <a href="skills.html">Compétences</a>
+        <a href="projects.html">Projets</a>
+        <a href="synthese.html">Tableau de synthèse</a>
+        <a href="veille.html">Veille</a>
+        <a class="nav-cv" href="documents/cv.pdf" download>Télécharger mon CV</a>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <main id="contenu">
+
+    <!-- =====================================================================
+         PAGE : ACCUEIL
+         POUR CHANGER UN TEXTE : modifie ce qui est entre les balises,
+         par exemple <p>ton texte ici</p>.
+         Ne touche pas aux class="..." : ils règlent l'apparence.
+         ===================================================================== -->
+
+    <!-- ---------- 1. HAUT DE PAGE : QUI JE SUIS ---------- -->
+    <section class="hero">
+      <div class="wrap hero-center">
+        <p class="eyebrow">BTS SIO option SISR · Alternance</p>
+        <h1>Claire Missie Mamouna, <em>technicienne support</em></h1>
+        <p class="lead">À compléter : une phrase personnelle sur ce qui te motive dans l'informatique.</p>
+      </div>
+    </section>
+
+
+    <!-- ---------- 2. PAR OÙ COMMENCER ----------
+         Une carte = un bloc <article> ... </article>.
+         <h3> = le nom de la partie, <p> = l'accroche, le lien = la page. -->
+    <section class="band" aria-labelledby="commencer-titre">
+      <div class="wrap">
+
+        <div class="section-head">
+          <h2 id="commencer-titre">Par où <em>commencer</em></h2>
+        </div>
+
+        <div class="card-grid">
+          <article class="p-card">
+            <div class="p-body">
+              <h3>Projets</h3>
+              <p>À compléter : une phrase d'accroche.</p>
+              <a class="row-link" href="projects.html">Voir les projets</a>
+            </div>
+          </article>
+
+          <article class="p-card">
+            <div class="p-body">
+              <h3>Parcours</h3>
+              <p>À compléter : une phrase d'accroche.</p>
+              <a class="row-link" href="parcours.html">Voir le parcours</a>
+            </div>
+          </article>
+
+          <article class="p-card">
+            <div class="p-body">
+              <h3>Veille technologique</h3>
+              <p>À compléter : une phrase d'accroche.</p>
+              <a class="row-link" href="veille.html">Lire la veille</a>
+            </div>
+          </article>
+
+          <article class="p-card">
+            <div class="p-body">
+              <h3>Compétences</h3>
+              <p>À compléter : une phrase d'accroche.</p>
+              <a class="row-link" href="skills.html">Voir les compétences</a>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ---------- 3. EN CE MOMENT ---------- -->
+    <section class="band band-alt" aria-labelledby="moment-titre">
+      <div class="wrap">
+
+        <div class="section-head">
+          <h2 id="moment-titre">En ce <em>moment</em></h2>
+        </div>
+
+        <div class="card-grid">
+          <article class="p-card">
+            <div class="p-body">
+              <h3>Alternance</h3>
+              <p>Technicienne support depuis octobre 2026.</p>
+            </div>
+          </article>
+
+          <article class="p-card">
+            <div class="p-body">
+              <h3>Dernière certification</h3>
+               <p>Introduction à la cybersécurité, Cisco Networking Academy (janvier 2026).</p>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+
+  </main>
+
+
+  <!-- =====================================================================
+       PIED DE PAGE — identique sur toutes les pages
+       ===================================================================== -->
+  <footer class="site-footer">
+    <div class="wrap footer-slim">
+      <p>© 2026 — Claire Missie Mamouna · BTS SIO SISR</p>
+      <p class="footer-contact">
+          <span>missieclaire79@gmail.com</span>
+      
+        <a href="https://linkedin.com/in/claire-ephrella-missie-mamouna" target="_blank" rel="noopener">LinkedIn</a>
+      </p>
+    </div>
+  </footer>
+
+
+  <script src="js/script.js"></script>
+</body>
+</html>

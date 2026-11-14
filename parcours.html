@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Titre de l'onglet du navigateur et description (pour Google) -->
+  <title>Parcours — Claire Missie Mamouna</title>
+  <meta name="description" content="Mon parcours en BTS SIO option SISR et mes projets pratiques.">
+
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700;800&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+
+<body>
+  <a class="skip" href="#contenu">Aller au contenu</a>
+
+
+  <!-- =====================================================================
+       EN-TÊTE ET MENU — identique sur les 7 pages
+       (seul le lien de la page en cours a aria-current="page")
+       ===================================================================== -->
+  <header class="site-header">
+    <div class="wrap bar">
+
+      <a class="brand" href="index.html" aria-label="Accueil">
+        <span>Claire Missie</span>
+        <span>Mamouna</span>
+      </a>
+
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+
+      <nav class="nav" id="site-nav" aria-label="Navigation principale">
+        <a href="index.html">Accueil</a>
+        <a href="parcours.html" aria-current="page">Parcours</a>
+        <a href="entreprises.html">Entreprises</a>
+        <a href="skills.html">Compétences</a>
+        <a href="projects.html">Projets</a>
+        <a href="synthese.html">Tableau de synthèse</a>
+        <a href="veille.html">Veille</a>
+        <a class="nav-cv" href="documents/cv.pdf" download>Télécharger mon CV</a>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <main id="contenu">
+
+    <!-- =====================================================================
+         PAGE : PARCOURS (regroupe À propos + Formation + Parcours)
+         POUR CHANGER UN TEXTE : modifie ce qui est entre les balises,
+         par exemple <p>ton texte ici</p>.
+         Ne touche pas aux class="..." : ils règlent l'apparence.
+         ===================================================================== -->
+
+    <!-- ---------- HAUT DE PAGE ---------- -->
+    <section class="hero hero-page">
+      <div class="wrap hero-center">
+        <h1>Comprendre, <em>apprendre et progresser</em></h1>
+        <p class="lead">Cette page présente mon profil, ce qui m'intéresse dans l'informatique et la direction que je souhaite donner à mon parcours.</p>
+      </div>
+    </section>
+
+
+    <!-- ---------- 1. QUI SUIS-JE ---------- -->
+    <section class="band" id="qui-suis-je">
+      <div class="wrap">
+
+        <h2>Qui <em>suis-je</em> ?</h2>
+        <p>Je m'appelle Claire Missie Mamouna, étudiante en BTS SIO option SISR, en alternance comme technicienne support. Mon intérêt pour l'informatique est né grâce à mon père, qui y voyait un métier d'avenir. En commençant, j'ai découvert les réseaux : comprendre comment les machines communiquent, lancer mes premiers ping… et j'ai tout de suite aimé.</p>
+        <p>Ce qui m'attire, c'est le côté concret : manipuler le matériel, travailler avec mes mains, voir le résultat de ce que je fais. Et savoir que le réseau est indispensable dans presque toutes les entreprises.</p>
+        <p>Mon tuteur d'alternance dit que j'apprends vite. Moi, je dirais surtout que j'aime pratiquer, et c'est ce qui m'a menée vers les réseaux, les systèmes et la cybersécurité.</p>
+
+      </div>
+    </section>
+
+
+    <!-- ---------- 2. MA FORMATION ----------
+         Une étape = un bloc <li> ... </li>. Copie-colle un bloc pour en ajouter.
+         "when" = la date, <h3> = le titre, <p> = la description. -->
+    <section class="band band-alt" id="formation">
+      <div class="wrap">
+
+        <div class="section-head">
+          <h2>Ma <em>formation</em></h2>
+          <p class="sub">Le cadre dans lequel je développe mes compétences en systèmes et réseaux.</p>
+        </div>
+
+        <ol class="timeline">
+
+          <li>
+            <span class="when">Depuis 2025</span>
+            <h3>BTS SIO, option SISR</h3>
+            <p>Institut F2I. Formation orientée systèmes, réseaux, administration des infrastructures et support. En alternance depuis octobre 2026.</p>
+          </li>
+
+          <!-- Vérifie le nom exact du document de comparabilité sur ton attestation -->
+          <li>
+            <span class="when">2024</span>
+            <h3>Baccalauréat série C (scientifique), Congo-Brazzaville</h3>
+          </li>
+
+        </ol>
+
+      </div>
+    </section>
+
+
+    <!-- ---------- 3. EXPÉRIENCES PROFESSIONNELLES ----------
+         Une expérience = un bloc <li> ... </li>. La plus récente en premier.
+         Une mission = un <li> dans la liste <ul>. Copie-colle une ligne pour en ajouter.
+         Nom de l'entreprise : vérifie avec ton tuteur qu'il peut apparaître sur un site public. -->
+    <section class="band" id="experiences">
+      <div class="wrap">
+
+        <div class="section-head">
+          <h2>Expériences <em>professionnelles</em></h2>
+          <p class="sub">Les entreprises où j'ai mis en pratique mes compétences.</p>
+        </div>
+
+        <ol class="timeline">
+
+          <li>
+            <span class="when">Depuis octobre 2026 · Alternance</span>
+            <h3>Technicienne support — Harvest</h3>
+            <p>Harvest est un éditeur français de logiciels pour les professionnels du conseil patrimonial et financier : conseillers en gestion de patrimoine, banques et assureurs. Au sein de l'équipe support, je m'occupe de l'arrivée et du départ des collaborateurs, de la préparation de leurs ordinateurs et des incidents du quotidien.</p>
+            <ul class="missions">
+              <li><strong>Préparation des postes</strong> : masterisation, installation des logiciels et intégration au domaine.</li>
+              <li><strong>Arrivée d'un collaborateur (onboarding)</strong> : remise du matériel, premières connexions (Windows, Netskope, Teams), choix de son mot de passe personnel et activation de BitLocker.</li>
+              <li><strong>Départ d'un collaborateur (offboarding)</strong> : récupération du matériel, retrait des accès (compte et poste dans Active Directory, licence et groupes dans Entra ID, badge). Dans la CMDB, le poste est remis en stock et n'est plus attribué à l'utilisateur.</li>
+              <li><strong>Remplacement de poste</strong> : préparation d'un nouveau poste avec les logiciels de l'utilisateur. L'ancien est conservé 15 jours, le temps de récupérer d'éventuels documents oubliés.</li>
+              <li><strong>Incidents</strong> : remplacement de périphériques, et résolution d'un problème de Wi-Fi apparu après la mise à jour de Windows 11 vers la 26H2, à l'aide d'un script des administrateurs infrastructure.</li>
+              <li><strong>Suivi</strong> : gestion des tickets dans EasyVista, et mise à jour des postes dans la CMDB.</li>
+            </ul>
+            <ul class="chips">
+              <li>EasyVista</li>
+              <li>Active Directory</li>
+              <li>Microsoft Entra ID</li>
+              <li>Microsoft 365</li>
+              <li>Netskope</li>
+              <li>Wallix Bastion</li>
+              <li>Visor</li>
+            </ul>
+          </li>
+
+          <li>
+            <span class="when">Juillet – août 2026 · Stage de 1<sup>re</sup> année</span>
+            <h3>Technicienne systèmes et réseaux — P2A Formation</h3>
+            <p>P2A Formation est un centre de formation professionnelle qui propose des parcours courts et certifiants pour les salariés et les demandeurs d'emploi.</p>
+            <ul class="missions">
+              <li><strong>Mise en place d'une salle d'examen</strong> : pour faire passer des tests de français (TCF…) selon les exigences de France Éducation international, installation d'un poste dédié, relié au réseau local et à Internet, qui télécharge les examens et les distribue sur 6 postes candidats sans accès à Internet. Devis du matériel (câbles RJ45, switch), puis câblage et configuration.</li>
+              <li><strong>Sécurisation des postes candidats</strong> : configuration manuelle de chaque poste sous Windows 11 (coupure d'Internet, désactivation du correcteur orthographique et d'autres outils), pour garantir le bon déroulement des examens.</li>
+              <li><strong>Audit du réseau existant</strong> : analyse de l'installation et séparation du Wi-Fi invité sur le routeur Keyyo, pour que les visiteurs n'aient plus accès au réseau interne.</li>
+            </ul>
+            <ul class="chips">
+              <li>Windows 11</li>
+              <li>Keyyo</li>
+              <li>Switch</li>
+              <li>Câblage RJ45</li>
+            </ul>
+          </li>
+
+        </ol>
+
+      </div>
+    </section>
+
+
+    <!-- ---------- 4. CERTIFICATIONS ----------
+         Une certification = un bloc <article> ... </article>.
+         POUR L'ATTESTATION : dépose le PDF dans documents/certifications/
+         avec le nom indiqué dans le bouton (en minuscules, sans espaces ni accents). -->
+    <section class="band band-alt" id="certifications">
+      <div class="wrap">
+
+        <div class="section-head">
+          <h2>Mes <em>certifications</em></h2>
+        </div>
+
+        <div class="card-grid">
+
+          <article class="p-card">
+            <div class="p-body">
+              <h3>Introduction à la cybersécurité</h3>
+              <p>Cisco Networking Academy · Janvier 2026</p>
+              <div class="p-actions">
+                <a class="btn btn-primary" href="documents/certifications/Certification Cisco Cybersécurité.pdf" target="_blank" rel="noopener">Voir l'attestation</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="p-card">
+            <div class="p-body">
+              <h3>SecNumacadémie</h3>
+              <p>ANSSI · Décembre 2025</p>
+              <div class="p-actions">
+                <a class="btn btn-primary" href="documents/certifications/Certificat_ANSSI.pdf" target="_blank" rel="noopener">Voir l'attestation</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ---------- 5. MON OBJECTIF ---------- -->
+    <section class="band" id="objectif">
+      <div class="wrap">
+
+        <h2>Mon <em>objectif</em></h2>
+
+        <!-- Ce que tu veux faire juste après le BTS -->
+        <h3>Après mon BTS</h3>
+        <p>Je souhaite poursuivre mes études avec une licence en systèmes, réseaux et cybersécurité, puis un cycle d'ingénieur.</p>
+
+        <!-- Le métier visé, et ce qui t'attire dans ce métier -->
+        <h3>Le métier que je vise</h3>
+        <p>Ingénieure systèmes, réseaux et sécurité : concevoir et administrer des réseaux et des systèmes, et assurer leur sécurité. Mon alternance et ma veille sur les rançongiciels m'ont montré à quel point la sécurité des infrastructures est devenue essentielle pour les entreprises : elle garantit la disponibilité, l'intégrité, la confidentialité et la traçabilité de leurs données et de leurs services.</p>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- =====================================================================
+       PIED DE PAGE — identique sur les 7 pages
+       ===================================================================== -->
+  <footer class="site-footer">
+    <div class="wrap footer-slim">
+      <p>© 2026 — Claire Missie Mamouna · BTS SIO SISR</p>
+      <p class="footer-contact">
+        <a href="contact.html">Me contacter</a>
+        <a href="https://linkedin.com/in/claire-ephrella-missie-mamouna" target="_blank" rel="noopener">LinkedIn</a>
+      </p>
+    </div>
+  </footer>
+
+
+  <script src="js/script.js"></script>
+</body>
+</html>
